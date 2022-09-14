@@ -1,4 +1,12 @@
 //
+// automatically changing the year in the footer to current year 
+//
+
+const yearEl = document.querySelector(".year");
+const currentYear= new Date().getFullYear();
+yearEl.textContent = currentYear;
+
+//
 // fixing flexbox gap property missing in some Safari versions
 //
 
