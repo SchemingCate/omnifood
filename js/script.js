@@ -1,10 +1,21 @@
 //
-// automatically changing the year in the footer to current year 
+// automatically changing the year in the footer to current year
 //
 
-const yearEl = document.querySelector(".year");
-const currentYear= new Date().getFullYear();
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+//
+// mobile nacigation
+//
+
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');;
+
+btnNavEl.addEventListener('click', function() {
+  headerEl.classList.toggle('nav-open');
+});
 
 //
 // fixing flexbox gap property missing in some Safari versions
